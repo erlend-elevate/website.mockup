@@ -1,0 +1,24 @@
+# Netlify deploy config for elevate-demos
+# Publishes the repo root so /demos/[slug]/index.html resolves
+# at /demos/[slug]/ directly. No build step required.
+
+[build]
+  publish = "."
+  command = ""
+
+# Make trailing-slash behaviour explicit so
+# /demos/colin-brown-kidson resolves to /demos/colin-brown-kidson/index.html
+[[redirects]]
+  from = "/demos/:slug"
+  to = "/demos/:slug/"
+  status = 301
+  force = false
+
+# Mild hardening — these are demos, not live client sites.
+# X-Robots-Tag noindex prevents accidental search-indexing of mockups.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer-when-downgrade"
