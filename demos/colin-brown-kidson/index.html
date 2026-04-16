@@ -3,223 +3,475 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CBK Solicitors — Trusted legal advice in Whitby since 1914</title>
-<meta name="description" content="Colin Brown &amp; Kidson Solicitors — family, property, wills and probate advice for Whitby and North Yorkshire.">
+<title>Colin Brown &amp; Kidson — Solicitors on the Whitby coast since 1914</title>
+<meta name="description" content="Colin Brown &amp; Kidson Solicitors. Family, property, wills and probate advice from the centre of Whitby. Over a century of local practice.">
 <meta name="robots" content="noindex,nofollow">
 <style>
+:root{
+  --ink:#1a1a1a;
+  --navy:#0f1e3a;
+  --navy-deep:#0a1428;
+  --paper:#faf8f2;
+  --paper-2:#f1ede0;
+  --rule:#d6d2c4;
+  --rule-soft:#e7e2d3;
+  --gold:#a8884d;
+  --gold-soft:#c9a96e;
+  --muted:#5a5a5a;
+}
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:17px;line-height:1.6;color:#222;background:#fff}
-img,svg{max-width:100%;display:block}
-a{color:#14213d}
-a:focus,button:focus{outline:2px solid #14213d;outline-offset:2px}
-.container{max-width:1100px;margin:0 auto;padding:0 20px}
-h1,h2,h3{color:#14213d;line-height:1.25;margin:0 0 16px}
-h1{font-size:30px;font-weight:600;letter-spacing:-.01em}
-h2{font-size:24px;font-weight:600}
-h3{font-size:18px;font-weight:600}
-p{margin:0 0 16px}
-.topbar{background:#f4f4f1;font-size:14px;border-top:3px solid #c9a96e}
-.topbar .container{display:flex;justify-content:space-between;align-items:center;padding-top:8px;padding-bottom:8px;flex-wrap:wrap;gap:8px}
-.topbar .brand{font-weight:600;color:#14213d}
-.topbar a{color:#14213d;text-decoration:none}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size:17px;
+  line-height:1.65;
+  color:var(--ink);
+  background:var(--paper);
+  -webkit-font-smoothing:antialiased;
+}
+.serif{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;font-weight:500;letter-spacing:-.005em}
+img,svg{display:block;max-width:100%}
+a{color:var(--navy)}
+a:focus,button:focus{outline:2px solid var(--gold);outline-offset:3px}
+.container{max-width:1140px;margin:0 auto;padding:0 22px}
+.small-caps{text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:600;color:var(--gold)}
+.small-caps-ink{text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:600;color:var(--navy)}
+.rule{border:0;border-top:1px solid var(--rule);margin:0}
+
+/* -------- top bar -------- */
+.topbar{background:var(--paper);border-top:3px solid var(--navy);font-size:13px;color:var(--muted)}
+.topbar .container{display:flex;justify-content:space-between;align-items:center;padding:10px 22px;flex-wrap:wrap;gap:10px}
+.topbar .mark{display:flex;align-items:center;gap:10px;font-family:"Iowan Old Style",Palatino,Georgia,serif;color:var(--navy);font-size:15px;letter-spacing:.02em}
+.topbar a{color:var(--navy);text-decoration:none;font-weight:600}
 .topbar a:hover{text-decoration:underline}
-.nav{border-bottom:1px solid #e5e5e5;background:#fff}
-.nav ul{list-style:none;margin:0;padding:12px 0;display:flex;flex-wrap:wrap;gap:20px}
-.nav a{text-decoration:none;color:#14213d;font-weight:500;font-size:15px}
-.nav a:hover{text-decoration:underline}
-.hero{padding:48px 0 32px}
-.hero .kicker{color:#6b6b6b;font-size:14px;text-transform:none;margin-bottom:8px}
-.hero h1{max-width:720px}
-.hero .lede{max-width:620px;color:#444;font-size:18px;margin-bottom:24px}
-.btn{display:inline-block;background:#14213d;color:#fff;padding:12px 20px;border-radius:4px;text-decoration:none;font-size:16px;border:none;cursor:pointer}
-.btn:hover{background:#0f1a30}
-.btn-secondary{display:inline-block;color:#14213d;text-decoration:underline;padding:12px 8px;font-size:16px;margin-left:12px}
-.section{padding:48px 0}
-.section-alt{background:#f8f8f6}
-.grid{display:grid;gap:16px;grid-template-columns:1fr}
-.card{border:1px solid #e5e5e5;border-radius:6px;padding:24px;background:#fff}
-.card h3{margin-top:0}
-.card p{color:#444;margin-bottom:12px}
-.card a{font-size:15px;text-decoration:none;color:#14213d;font-weight:500}
-.card a:hover{text-decoration:underline}
-.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
-.badge{border:1px solid #cfcfcf;padding:6px 12px;border-radius:4px;font-size:13px;color:#444;background:#fff}
-.testimonial{border-left:3px solid #c9a96e;padding:16px 20px;background:#fff;margin-bottom:16px}
-.testimonial p{margin:0;color:#444;font-style:italic}
-.testimonial .meta{display:block;margin-top:10px;font-style:normal;font-size:13px;color:#6b6b6b}
-.areas-list{columns:2;column-gap:24px;padding:0;list-style:none;margin:0}
-.areas-list li{padding:6px 0;color:#444}
-.contact-grid{display:grid;gap:32px;grid-template-columns:1fr}
-.contact-info p{margin-bottom:8px}
-.contact-info strong{color:#14213d}
-form{display:flex;flex-direction:column;gap:12px}
-label{font-size:14px;color:#14213d;font-weight:500}
-input,textarea{width:100%;padding:10px 12px;border:1px solid #cfcfcf;border-radius:4px;font-family:inherit;font-size:16px;background:#fff}
-textarea{min-height:120px;resize:vertical}
-input:focus,textarea:focus{outline:2px solid #14213d;outline-offset:1px;border-color:#14213d}
-footer{background:#14213d;color:#d8d8d8;padding:32px 0;font-size:14px;margin-top:48px}
-footer p{margin:0 0 8px;color:#d8d8d8}
-footer .mockup-notice{font-size:12px;color:#9a9a9a;margin-top:16px}
-footer a{color:#d8d8d8}
-@media (min-width:768px){
+
+/* -------- nav -------- */
+.nav{background:var(--paper);border-bottom:1px solid var(--rule)}
+.nav .container{display:flex;align-items:center;justify-content:space-between;padding:16px 22px;flex-wrap:wrap;gap:14px}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:26px;flex-wrap:wrap}
+.nav a{text-decoration:none;color:var(--navy);font-size:14px;font-weight:500;letter-spacing:.02em;padding:4px 0;border-bottom:1px solid transparent}
+.nav a:hover{border-bottom-color:var(--gold)}
+.nav .cta-mini{font-size:13px;font-weight:600;color:var(--navy);text-decoration:none;border:1px solid var(--navy);padding:7px 14px;border-radius:2px}
+.nav .cta-mini:hover{background:var(--navy);color:#fff}
+
+/* -------- hero -------- */
+.hero{padding:56px 0 24px;background:var(--paper);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--rule)}
+.hero .container{display:grid;grid-template-columns:1fr;gap:40px;align-items:start}
+.hero .kicker{margin-bottom:14px}
+.hero h1{font-size:38px;line-height:1.08;color:var(--navy);margin:0 0 20px;letter-spacing:-.015em}
+.hero h1 em{font-style:italic;color:var(--gold);font-weight:500}
+.hero .lede{font-size:19px;color:var(--muted);max-width:540px;margin:0 0 28px;line-height:1.55}
+.cta-row{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center}
+.btn{display:inline-block;background:var(--navy);color:#fff;padding:14px 24px;text-decoration:none;font-size:15px;font-weight:600;letter-spacing:.02em;border-radius:2px;border:1px solid var(--navy);cursor:pointer;font-family:inherit}
+.btn:hover{background:var(--navy-deep);border-color:var(--navy-deep)}
+.btn-sec{color:var(--navy);font-size:15px;text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:2px}
+.btn-sec:hover{color:var(--gold)}
+
+/* -------- firm stamp -------- */
+.stamp{
+  background:var(--paper-2);
+  border:1px solid var(--rule);
+  padding:26px 26px 22px;
+  position:relative;
+}
+.stamp::before{content:"";position:absolute;top:8px;left:8px;right:8px;bottom:8px;border:1px solid var(--rule);pointer-events:none}
+.stamp .monogram{margin:2px auto 16px;display:block}
+.stamp .est{text-align:center;margin-bottom:18px}
+.stamp .est .year{font-family:"Iowan Old Style",Palatino,Georgia,serif;font-size:30px;color:var(--navy);display:block;line-height:1}
+.stamp .est .label{font-size:11px;text-transform:uppercase;letter-spacing:.22em;color:var(--gold);display:block;margin-top:6px}
+.stamp hr{border:0;border-top:1px solid var(--rule);margin:0 auto 16px;width:40px}
+.stamp dl{margin:0;font-size:13px;line-height:1.5}
+.stamp dt{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-top:10px}
+.stamp dt:first-child{margin-top:0}
+.stamp dd{margin:2px 0 0;color:var(--navy);font-weight:500}
+
+/* -------- belt (quiet band between sections) -------- */
+.belt{background:var(--navy);color:#e9e3cf;padding:18px 0;font-size:14px}
+.belt .container{display:flex;flex-wrap:wrap;gap:14px 32px;align-items:center;justify-content:space-between}
+.belt strong{color:#fff;font-weight:600}
+.belt .tag{font-family:"Iowan Old Style",Palatino,Georgia,serif;font-style:italic;font-size:16px;color:#e9e3cf}
+
+/* -------- sections -------- */
+.section{padding:72px 0}
+.section-alt{background:var(--paper-2)}
+.section-head{max-width:780px;margin-bottom:40px}
+.section-head .kicker{margin-bottom:12px}
+.section-head h2{font-size:30px;line-height:1.15;color:var(--navy);margin:0 0 14px;letter-spacing:-.01em}
+.section-head p{color:var(--muted);font-size:17px;margin:0;max-width:640px}
+
+/* -------- practice areas (editorial list, not grid) -------- */
+.practice{border-top:1px solid var(--rule)}
+.practice .row{display:grid;grid-template-columns:1fr;gap:6px;padding:28px 0;border-bottom:1px solid var(--rule)}
+.practice .num{font-family:"Iowan Old Style",Palatino,Georgia,serif;color:var(--gold);font-size:14px;letter-spacing:.18em}
+.practice h3{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-weight:500;color:var(--navy);font-size:24px;margin:0 0 8px;letter-spacing:-.005em}
+.practice p{color:var(--muted);margin:0 0 10px;max-width:640px}
+.practice .more{font-size:14px;color:var(--navy);text-decoration:none;border-bottom:1px solid var(--gold);display:inline-block;padding-bottom:2px}
+.practice .more:hover{color:var(--gold)}
+
+/* -------- about (2-col editorial) -------- */
+.about-grid{display:grid;grid-template-columns:1fr;gap:36px}
+.about-body p{margin:0 0 16px;color:var(--ink);font-size:17px}
+.about-body p:first-child::first-letter{
+  font-family:"Iowan Old Style",Palatino,Georgia,serif;
+  font-size:56px;float:left;line-height:.9;color:var(--navy);
+  margin:4px 10px 0 0;font-weight:500;
+}
+.about-side{border-top:2px solid var(--navy);padding-top:20px}
+.about-side h4{font-size:12px;text-transform:uppercase;letter-spacing:.22em;color:var(--gold);margin:0 0 16px;font-weight:700}
+.about-side dl{margin:0;font-size:14px}
+.about-side dt{font-weight:600;color:var(--navy);margin-top:14px;font-size:13px}
+.about-side dt:first-of-type{margin-top:0}
+.about-side dd{margin:2px 0 0;color:var(--muted)}
+
+/* -------- testimonials -------- */
+.pullquote{
+  font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  font-style:italic;font-size:26px;line-height:1.4;color:var(--navy);
+  margin:0;max-width:780px;position:relative;padding-left:0;
+}
+.pullquote::before{content:"\201C";position:absolute;left:-4px;top:-30px;font-size:90px;color:var(--gold);line-height:1;font-style:normal}
+.pullquote-meta{display:block;margin-top:20px;font-style:normal;font-size:13px;letter-spacing:.08em;color:var(--gold);text-transform:uppercase}
+.mini-reviews{display:grid;grid-template-columns:1fr;gap:22px;margin-top:40px;padding-top:30px;border-top:1px solid var(--rule)}
+.mini-reviews blockquote{margin:0;font-family:"Iowan Old Style",Palatino,Georgia,serif;font-style:italic;color:var(--navy);font-size:17px;line-height:1.5}
+.mini-reviews cite{display:block;margin-top:10px;font-style:normal;font-size:12px;letter-spacing:.14em;color:var(--gold);text-transform:uppercase}
+.stars{color:var(--gold);letter-spacing:2px;font-size:13px;margin-bottom:8px}
+
+/* -------- areas served (directory style) -------- */
+.directory{border-top:1px solid var(--rule);padding-top:24px;font-family:"Iowan Old Style",Palatino,Georgia,serif}
+.directory ul{list-style:none;margin:0;padding:0;columns:1;column-gap:40px}
+.directory li{display:flex;align-items:baseline;gap:8px;padding:10px 0;border-bottom:1px dashed var(--rule);font-size:17px;color:var(--navy)}
+.directory li .place{flex:0 0 auto;font-weight:500}
+.directory li .dots{flex:1 1 auto;border-bottom:1px dotted var(--rule);transform:translateY(-4px);margin:0 4px}
+.directory li .note{flex:0 0 auto;font-size:12px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;font-family:-apple-system,sans-serif}
+
+/* -------- contact -------- */
+.contact-grid{display:grid;grid-template-columns:1fr;gap:36px}
+.contact-info .block{margin-bottom:18px}
+.contact-info .label{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:700;display:block;margin-bottom:4px}
+.contact-info address{font-style:normal;color:var(--navy);font-size:17px;line-height:1.55}
+.contact-info a{color:var(--navy);font-weight:500}
+form{display:grid;gap:14px;background:var(--paper);padding:26px;border:1px solid var(--rule)}
+form .field{display:flex;flex-direction:column;gap:6px}
+label{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--navy);font-weight:600}
+input,textarea{width:100%;padding:12px 14px;border:1px solid var(--rule);border-radius:2px;font-family:inherit;font-size:16px;background:#fff;color:var(--ink)}
+textarea{min-height:110px;resize:vertical}
+input:focus,textarea:focus{outline:2px solid var(--gold);outline-offset:1px;border-color:var(--navy)}
+form .btn{width:100%;text-align:center}
+
+/* -------- footer -------- */
+footer{background:var(--navy);color:#c9c2a7;padding:42px 0 28px;font-size:14px;margin-top:0}
+footer .container{display:grid;grid-template-columns:1fr;gap:20px}
+footer .f-brand{font-family:"Iowan Old Style",Palatino,Georgia,serif;color:#fff;font-size:18px;margin-bottom:6px}
+footer p{margin:0 0 6px}
+footer a{color:#e9e3cf;text-decoration:underline}
+footer .rule-gold{border:0;border-top:1px solid #2b3757;margin:22px 0 16px}
+footer .meta{color:#8f8868;font-size:12px}
+footer .mockup-notice{color:#8a7f57;font-size:12px;letter-spacing:.04em}
+
+/* -------- responsive -------- */
+@media (min-width:760px){
   body{font-size:18px}
-  h1{font-size:40px}
-  h2{font-size:28px}
-  .hero{padding:72px 0 48px}
-  .section{padding:80px 0}
-  .grid{grid-template-columns:repeat(3,1fr);gap:20px}
-  .contact-grid{grid-template-columns:1fr 1fr;gap:48px}
-  .nav ul{gap:28px}
+  .hero{padding:88px 0 40px}
+  .hero .container{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:64px}
+  .hero h1{font-size:56px}
+  .hero .lede{font-size:20px}
+  .section{padding:96px 0}
+  .section-head h2{font-size:38px}
+  .practice .row{grid-template-columns:80px 1fr 1fr;gap:28px;padding:36px 0;align-items:baseline}
+  .practice .num{font-size:15px}
+  .practice h3{font-size:26px;margin:0}
+  .practice p{margin:0}
+  .practice .more{justify-self:start}
+  .practice .text{display:flex;flex-direction:column;gap:10px}
+  .about-grid{grid-template-columns:1.6fr 1fr;gap:64px}
+  .pullquote{font-size:30px}
+  .mini-reviews{grid-template-columns:1fr 1fr;gap:40px}
+  .directory ul{columns:2}
+  .contact-grid{grid-template-columns:1fr 1fr;gap:56px}
+  footer .container{grid-template-columns:1.6fr 1fr;gap:40px}
+}
+@media (min-width:1024px){
+  .hero h1{font-size:64px}
+  .section-head h2{font-size:42px}
 }
 </style>
 </head>
 <body>
 
-<div class="topbar" role="banner">
+<!-- TOP BAR -->
+<div class="topbar">
   <div class="container">
-    <span class="brand">CBK Solicitors · Whitby</span>
-    <span><a href="tel:01947603391">01947 603391</a></span>
+    <span class="mark">
+      <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true">
+        <rect x="1" y="1" width="30" height="30" fill="none" stroke="#0f1e3a" stroke-width="0.8"/>
+        <rect x="4" y="4" width="24" height="24" fill="none" stroke="#a8884d" stroke-width="0.4"/>
+        <text x="16" y="20.5" font-family="Georgia, serif" font-size="10" font-weight="700" fill="#0f1e3a" text-anchor="middle" letter-spacing="1">CBK</text>
+      </svg>
+      Colin Brown &amp; Kidson · Solicitors
+    </span>
+    <span>Whitby · <a href="tel:01947603391">01947 603391</a></span>
   </div>
 </div>
 
+<!-- NAV -->
 <nav class="nav" aria-label="Primary">
   <div class="container">
     <ul>
       <li><a href="#practice-areas">Practice Areas</a></li>
-      <li><a href="#about">About</a></li>
+      <li><a href="#about">About the Firm</a></li>
+      <li><a href="#reviews">Client Reviews</a></li>
       <li><a href="#areas-we-serve">Areas We Serve</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <a class="cta-mini" href="#contact">Request a callback</a>
   </div>
 </nav>
 
-<main>
-
-<section class="hero">
+<!-- HERO -->
+<header class="hero">
   <div class="container">
-    <p class="kicker">Colin Brown &amp; Kidson Solicitors</p>
-    <h1>Trusted legal advice in Whitby since 1914.</h1>
-    <p class="lede">Family, property and private client solicitors serving Whitby and the wider North Yorkshire coast. Straightforward advice from a team you can meet in person.</p>
-    <a class="btn" href="#contact">Request a callback</a>
-    <a class="btn-secondary" href="tel:01947603391">or call 01947 603391</a>
+    <div class="hero-main">
+      <p class="small-caps kicker">Established 1914 · Wellington Road, Whitby</p>
+      <h1 class="serif">Solicitors on the Whitby coast, <em>four generations on.</em></h1>
+      <p class="lede">A small, independent practice in the centre of Whitby. Plain-English advice on family matters, property, wills and probate &mdash; delivered by the solicitor who takes your call.</p>
+      <div class="cta-row">
+        <a class="btn" href="#contact">Request a callback</a>
+        <a class="btn-sec" href="tel:01947603391">or call 01947 603391</a>
+      </div>
+    </div>
+
+    <aside class="stamp" aria-label="Firm credentials">
+      <svg class="monogram" viewBox="0 0 84 84" width="76" height="76" aria-hidden="true">
+        <circle cx="42" cy="42" r="40" fill="none" stroke="#0f1e3a" stroke-width="1"/>
+        <circle cx="42" cy="42" r="34" fill="none" stroke="#a8884d" stroke-width="0.6"/>
+        <text x="42" y="40" font-family="Georgia, serif" font-size="16" font-weight="700" fill="#0f1e3a" text-anchor="middle" letter-spacing="2.5">CBK</text>
+        <line x1="30" y1="46" x2="54" y2="46" stroke="#a8884d" stroke-width="0.6"/>
+        <text x="42" y="58" font-family="Georgia, serif" font-size="9" fill="#a8884d" text-anchor="middle" letter-spacing="3" font-style="italic">Whitby</text>
+      </svg>
+      <div class="est">
+        <span class="year serif">1914</span>
+        <span class="label">Est.</span>
+      </div>
+      <hr>
+      <dl>
+        <dt>Regulated by</dt>
+        <dd>SRA No. 44283</dd>
+        <dt>Accreditations</dt>
+        <dd>Lexcel · CQS · Resolution</dd>
+        <dt>Client rating</dt>
+        <dd>★★★★★ &nbsp;50+ Google reviews</dd>
+      </dl>
+    </aside>
+  </div>
+</header>
+
+<!-- BELT -->
+<section class="belt" aria-hidden="false">
+  <div class="container">
+    <span class="tag">&ldquo;A Whitby practice. Four generations. One town.&rdquo;</span>
+    <span><strong>Mon&ndash;Fri 9&ndash;5</strong> &middot; Wellington House, 5 Wellington Road, YO21 1BH</span>
   </div>
 </section>
 
-<section class="section section-alt" id="practice-areas" aria-labelledby="practice-areas-h">
+<!-- PRACTICE AREAS -->
+<section class="section" id="practice-areas" aria-labelledby="practice-h">
   <div class="container">
-    <h2 id="practice-areas-h">How we can help</h2>
-    <p>We advise individuals, families and local businesses across six core areas of law.</p>
-    <div class="grid">
-      <div class="card">
+    <div class="section-head">
+      <p class="small-caps">Practice Areas</p>
+      <h2 class="serif" id="practice-h">How we can help.</h2>
+      <p>Six areas of law for individuals, families and local businesses along the North Yorkshire coast.</p>
+    </div>
+
+    <div class="practice">
+      <div class="row">
+        <span class="num">01 /</span>
         <h3>Family Law &amp; Divorce</h3>
-        <p>Sensitive, plain-English guidance on divorce, separation, financial settlements and arrangements for children. Resolution-accredited.</p>
-        <a href="#contact">Speak to our family team →</a>
+        <div class="text">
+          <p>Sensitive, plain-English guidance on divorce, separation, financial settlements and arrangements for children. Resolution-accredited family solicitors.</p>
+          <a class="more" href="#contact">Speak to our family team →</a>
+        </div>
       </div>
-      <div class="card">
+      <div class="row">
+        <span class="num">02 /</span>
         <h3>Wills, Trusts &amp; Probate</h3>
-        <p>Making a will, lasting powers of attorney, and helping executors administer estates. Clear advice, fixed fees where possible.</p>
-        <a href="#contact">Discuss your will →</a>
+        <div class="text">
+          <p>Making a will, lasting powers of attorney, inheritance planning and estate administration after bereavement. We have acted for Whitby executors for over a century.</p>
+          <a class="more" href="#contact">Discuss your estate →</a>
+        </div>
       </div>
-      <div class="card">
+      <div class="row">
+        <span class="num">03 /</span>
         <h3>Residential Conveyancing</h3>
-        <p>Buying, selling, remortgaging or transferring property in Whitby and across Yorkshire. CQS-accredited for quality.</p>
-        <a href="#contact">Get a conveyancing quote →</a>
+        <div class="text">
+          <p>Buying, selling, remortgaging or transferring homes across Whitby and the Yorkshire coast. CQS-accredited for quality. Clear, fixed-fee estimates at the outset.</p>
+          <a class="more" href="#contact">Request a quote →</a>
+        </div>
       </div>
-      <div class="card">
+      <div class="row">
+        <span class="num">04 /</span>
         <h3>Commercial Property</h3>
-        <p>Leases, purchases and sales for landlords, business owners and investors. Practical, transactional support.</p>
-        <a href="#contact">Enquire about a matter →</a>
+        <div class="text">
+          <p>Leases, purchases and sales for landlords, business owners and investors &mdash; from single-unit lettings to mixed-use freeholds on the coast.</p>
+          <a class="more" href="#contact">Ask about a matter →</a>
+        </div>
       </div>
-      <div class="card">
+      <div class="row">
+        <span class="num">05 /</span>
         <h3>Personal Injury</h3>
-        <p>Road traffic, workplace and public liability claims. An initial conversation to see whether we can help, with no obligation.</p>
-        <a href="#contact">Ask about your claim →</a>
+        <div class="text">
+          <p>Road traffic, workplace and public liability claims. An initial conversation to see whether we can help, with no obligation and no cost.</p>
+          <a class="more" href="#contact">Ask about your claim →</a>
+        </div>
       </div>
-      <div class="card">
+      <div class="row">
+        <span class="num">06 /</span>
         <h3>Business &amp; Commercial</h3>
-        <p>Day-to-day legal support for local businesses — contracts, disputes, employment matters and company agreements.</p>
-        <a href="#contact">Talk to a solicitor →</a>
+        <div class="text">
+          <p>Day-to-day legal support for local businesses &mdash; contracts, disputes, employment matters and company agreements.</p>
+          <a class="more" href="#contact">Talk to a solicitor →</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section" id="about" aria-labelledby="about-h">
+<!-- ABOUT -->
+<section class="section section-alt" id="about" aria-labelledby="about-h">
   <div class="container">
-    <h2 id="about-h">About CBK</h2>
-    <p>Colin Brown &amp; Kidson has served Whitby and the surrounding coast since 1914. Over four generations, our role has stayed the same: give people honest, understandable legal advice, and get the work done without fuss.</p>
-    <p>We are a small, approachable team. When you instruct us, you deal directly with a qualified solicitor — not a call centre. Most of our work comes from clients returning to us, or from their families and neighbours.</p>
-    <p>We are authorised and regulated by the Solicitors Regulation Authority (SRA number 44283), and hold the following professional accreditations:</p>
-    <div class="badges">
-      <span class="badge">Lexcel accredited</span>
-      <span class="badge">Conveyancing Quality Scheme (CQS)</span>
-      <span class="badge">Resolution member</span>
+    <div class="section-head">
+      <p class="small-caps">About the Firm</p>
+      <h2 class="serif" id="about-h">One practice. One town. Four generations.</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-body">
+        <p>Colin Brown &amp; Kidson has served Whitby and the surrounding coast since 1914. Over four generations our role has stayed the same: give people honest, understandable advice, and get the work done without fuss.</p>
+        <p>We are a small team by choice. When you instruct us, you deal directly with a qualified solicitor &mdash; not a call centre, not a case handler. Most of our work comes from clients returning to us, or from their families and neighbours recommending us.</p>
+        <p>Our office sits on Wellington Road, a short walk from the harbour. We see clients face-to-face whenever it helps, but we&rsquo;re equally set up to advise over the phone or by email for those who prefer it.</p>
+      </div>
+      <aside class="about-side">
+        <h4>Firm facts</h4>
+        <dl>
+          <dt>Established</dt>
+          <dd>1914</dd>
+          <dt>Office</dt>
+          <dd>Wellington House, 5 Wellington Road, Whitby YO21 1BH</dd>
+          <dt>SRA number</dt>
+          <dd>44283</dd>
+          <dt>Accreditations</dt>
+          <dd>Lexcel (practice management standard)</dd>
+          <dd>CQS (Conveyancing Quality Scheme)</dd>
+          <dd>Resolution (family law)</dd>
+          <dt>Opening hours</dt>
+          <dd>Monday to Friday, 9am&ndash;5pm</dd>
+          <dt>Initial consultation</dt>
+          <dd>£210 + VAT, face-to-face</dd>
+        </dl>
+      </aside>
     </div>
   </div>
 </section>
 
-<section class="section section-alt" aria-labelledby="reviews-h">
+<!-- REVIEWS -->
+<section class="section" id="reviews" aria-labelledby="reviews-h">
   <div class="container">
-    <h2 id="reviews-h">What clients say</h2>
-    <p>We have a 5-star rating on Google from over 50 reviews. A few examples below will appear here once transferred from the firm&rsquo;s live profile.</p>
-    <div class="testimonial">
-      <p>[sample testimonial &mdash; replace with a real review from the firm&rsquo;s Google profile]</p>
-      <span class="meta">[placeholder: client initials, matter type, year]</span>
+    <div class="section-head">
+      <p class="small-caps">Client Reviews</p>
+      <h2 class="serif" id="reviews-h">What Whitby clients say.</h2>
+      <p>5 out of 5 on Google, from over 50 reviews. Quotes below will be replaced with real client reviews before the site goes live.</p>
     </div>
-    <div class="testimonial">
-      <p>[sample testimonial &mdash; replace with a real review from the firm&rsquo;s Google profile]</p>
-      <span class="meta">[placeholder: client initials, matter type, year]</span>
-    </div>
-    <div class="testimonial">
-      <p>[sample testimonial &mdash; replace with a real review from the firm&rsquo;s Google profile]</p>
-      <span class="meta">[placeholder: client initials, matter type, year]</span>
+
+    <blockquote class="pullquote">
+      [sample testimonial &mdash; replace with a real five-star review from the firm&rsquo;s Google profile, ideally one that mentions a specific matter type such as probate, conveyancing or divorce]
+      <span class="pullquote-meta">[placeholder — client initials, matter type, year]</span>
+    </blockquote>
+
+    <div class="mini-reviews">
+      <div>
+        <div class="stars">★★★★★</div>
+        <blockquote>[sample testimonial — replace with a real short Google review]</blockquote>
+        <cite>[placeholder — client initials, year]</cite>
+      </div>
+      <div>
+        <div class="stars">★★★★★</div>
+        <blockquote>[sample testimonial — replace with a real short Google review]</blockquote>
+        <cite>[placeholder — client initials, year]</cite>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="section" id="areas-we-serve" aria-labelledby="areas-h">
+<!-- AREAS SERVED -->
+<section class="section section-alt" id="areas-we-serve" aria-labelledby="areas-h">
   <div class="container">
-    <h2 id="areas-h">Areas we serve</h2>
-    <p>We support clients across the North Yorkshire coast and moors, including:</p>
-    <ul class="areas-list">
-      <li>Whitby</li>
-      <li>Sandsend</li>
-      <li>Robin Hood&rsquo;s Bay</li>
-      <li>Staithes</li>
-      <li>Ruswarp</li>
-      <li>Sleights</li>
-      <li>Grosmont</li>
-      <li>Egton</li>
-    </ul>
+    <div class="section-head">
+      <p class="small-caps">Areas We Serve</p>
+      <h2 class="serif" id="areas-h">Whitby and the wider coast.</h2>
+      <p>We work with individuals, families and businesses across the North Yorkshire coast and moors.</p>
+    </div>
+    <div class="directory">
+      <ul>
+        <li><span class="place">Whitby</span><span class="dots"></span><span class="note">YO21 / YO22</span></li>
+        <li><span class="place">Sandsend</span><span class="dots"></span><span class="note">YO21</span></li>
+        <li><span class="place">Robin Hood&rsquo;s Bay</span><span class="dots"></span><span class="note">YO22</span></li>
+        <li><span class="place">Staithes</span><span class="dots"></span><span class="note">TS13</span></li>
+        <li><span class="place">Ruswarp</span><span class="dots"></span><span class="note">YO21</span></li>
+        <li><span class="place">Sleights</span><span class="dots"></span><span class="note">YO22</span></li>
+        <li><span class="place">Grosmont</span><span class="dots"></span><span class="note">YO22</span></li>
+        <li><span class="place">Egton</span><span class="dots"></span><span class="note">YO21</span></li>
+      </ul>
+    </div>
   </div>
 </section>
 
-<section class="section section-alt" id="contact" aria-labelledby="contact-h">
+<!-- CONTACT -->
+<section class="section" id="contact" aria-labelledby="contact-h">
   <div class="container">
-    <h2 id="contact-h">Get in touch</h2>
-    <p>Tell us briefly what you need help with and we will call you back within one working day.</p>
+    <div class="section-head">
+      <p class="small-caps">Get in Touch</p>
+      <h2 class="serif" id="contact-h">Tell us what you need help with.</h2>
+      <p>We will call you back within one working day. There is no obligation and no cost for the first conversation by phone.</p>
+    </div>
     <div class="contact-grid">
       <div class="contact-info">
-        <p><strong>Address</strong><br>Wellington House<br>5 Wellington Road<br>Whitby<br>North Yorkshire YO21 1BH</p>
-        <p><strong>Phone</strong><br><a href="tel:01947603391">01947 603391</a></p>
-        <p><strong>Email</strong><br><a href="mailto:law@cbk.uk.com">law@cbk.uk.com</a></p>
-        <p><strong>Opening hours</strong><br>Monday to Friday, 9am&ndash;5pm</p>
+        <div class="block">
+          <span class="label">Visit us</span>
+          <address>
+            Wellington House<br>
+            5 Wellington Road<br>
+            Whitby<br>
+            North Yorkshire YO21 1BH
+          </address>
+        </div>
+        <div class="block">
+          <span class="label">Call</span>
+          <p><a href="tel:01947603391">01947 603391</a></p>
+        </div>
+        <div class="block">
+          <span class="label">Email</span>
+          <p><a href="mailto:law@cbk.uk.com">law@cbk.uk.com</a></p>
+        </div>
+        <div class="block">
+          <span class="label">Opening hours</span>
+          <p>Monday to Friday · 9am&ndash;5pm</p>
+        </div>
       </div>
       <form action="mailto:law@cbk.uk.com" method="post" enctype="text/plain" aria-label="Callback request">
-        <div>
+        <div class="field">
           <label for="name">Your name</label>
           <input id="name" name="name" type="text" required autocomplete="name">
         </div>
-        <div>
+        <div class="field">
           <label for="phone">Phone</label>
           <input id="phone" name="phone" type="tel" required autocomplete="tel">
         </div>
-        <div>
+        <div class="field">
           <label for="email">Email</label>
           <input id="email" name="email" type="email" autocomplete="email">
         </div>
-        <div>
+        <div class="field">
           <label for="message">How can we help?</label>
           <textarea id="message" name="message" required></textarea>
         </div>
@@ -229,15 +481,23 @@ footer a{color:#d8d8d8}
   </div>
 </section>
 
-</main>
-
+<!-- FOOTER -->
 <footer>
   <div class="container">
-    <p><strong style="color:#fff">Colin Brown &amp; Kidson Solicitors</strong></p>
-    <p>Wellington House, 5 Wellington Road, Whitby, YO21 1BH · 01947 603391</p>
-    <p>Authorised and regulated by the Solicitors Regulation Authority (SRA 44283).</p>
-    <p>&copy; 2026 Colin Brown &amp; Kidson Solicitors. All rights reserved.</p>
-    <p class="mockup-notice">Mockup designed by Elevate Marketing · <a href="https://elevatemarketing.no">elevatemarketing.no</a></p>
+    <div>
+      <p class="f-brand serif">Colin Brown &amp; Kidson Solicitors</p>
+      <p>Wellington House, 5 Wellington Road, Whitby, North Yorkshire YO21 1BH</p>
+      <p>01947 603391 &middot; <a href="mailto:law@cbk.uk.com">law@cbk.uk.com</a></p>
+    </div>
+    <div>
+      <p>Authorised and regulated by the Solicitors Regulation Authority (SRA 44283).</p>
+      <p>Lexcel &middot; CQS &middot; Resolution.</p>
+    </div>
+  </div>
+  <div class="container">
+    <hr class="rule-gold">
+    <p class="meta">&copy; 2026 Colin Brown &amp; Kidson Solicitors. All rights reserved.</p>
+    <p class="mockup-notice">Mockup designed by Elevate Marketing &middot; <a href="https://elevatemarketing.no">elevatemarketing.no</a></p>
   </div>
 </footer>
 
